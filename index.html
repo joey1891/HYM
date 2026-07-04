@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYM CORP. | Global Distribution & Consulting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#c5a059', // 개척가, 실크로드, 프리미엄을 상징하는 뮤트 골드
+                            dark: '#050505',
+                            card: '#0c0c0c',
+                            border: '#1a1a1a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* 커스텀 폰트 설정 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap');
+        
+        html {
+            scroll-behavior: smooth; /* 부드러운 스크롤 */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505; 
+            color: #ffffff;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .font-serif-kr {
+            font-family: 'Noto Serif KR', serif;
+        }
+        
+        /* 네비게이션 활성화/호버 밑줄 효과 */
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #c5a059;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 100%;
+        }
+
+        /* 모바일 스크롤바 숨기기 */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header Section -->
+    <header class="w-full border-b border-brand-border sticky top-0 bg-[#050505]/80 backdrop-blur-md z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between">
+            
+            <!-- Logo Area -->
+            <div class="flex items-center mb-4 md:mb-0 w-full md:w-auto justify-center md:justify-start">
+                <a href="#home" class="flex-shrink-0 transition-opacity hover:opacity-80">
+                    <img src="https://vwtppdwlxrcpautdivny.supabase.co/storage/v1/object/sign/homepage/noBgWhite.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV82NWJjNzA3Ni0wZTNjLTRlYjgtOTMxNy1iNGJjYzUyZWYwY2EiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJob21lcGFnZS9ub0JnV2hpdGUucG5nIiwic2NvcGUiOiJkb3dubG9hZCIsImlhdCI6MTc4MzE0NTcxNywiZXhwIjoyMDk4NTA1NzE3fQ.RGpysI1gtskEOmEIRFNcqiGOBBYIc8gFoNEPWbKwM_o" alt="HYM CORP." class="h-12 md:h-16 object-contain">
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="w-full md:w-auto overflow-x-auto hide-scrollbar pb-2 md:pb-0">
+                <ul class="flex justify-center md:justify-end space-x-8 md:space-x-10 text-[13px] uppercase font-medium tracking-[0.15em] text-gray-400 whitespace-nowrap px-2">
+                    <li><a href="#home" class="nav-link active hover:text-white transition-colors duration-300">Home</a></li>
+                    <li><a href="#about" class="nav-link hover:text-white transition-colors duration-300">About</a></li>
+                    <li><a href="#markets" class="nav-link hover:text-white transition-colors duration-300">Markets</a></li>
+                    <li><a href="#services" class="nav-link hover:text-white transition-colors duration-300">Services</a></li>
+                    <li><a href="#contact" class="nav-link hover:text-white transition-colors duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="flex-grow w-full">
+        
+        <!-- Hero Section -->
+        <section id="home" class="max-w-6xl mx-auto px-6 pt-16 pb-20 md:pt-28 md:pb-32 text-center md:text-left">
+            <h1 class="font-serif-kr text-5xl md:text-7xl lg:text-8xl leading-tight font-medium mb-6 tracking-tight">
+                Great Ambition,<br class="hidden md:block">
+                <span class="text-brand-gold italic">Unstoppable Power.</span>
+            </h1>
+            <div class="mt-8 md:mt-12 md:border-l-2 md:border-brand-gold md:pl-6 py-2 mx-auto md:mx-0 max-w-3xl">
+                <p class="text-lg md:text-2xl text-gray-300 font-light leading-relaxed">
+                    "Reconnecting the ancient Silk Road, from the Korean Peninsula to the vast Eurasian continent."
+                </p>
+            </div>
+        </section>
+
+        <!-- Main Banner Area (Video) -->
+        <section class="max-w-6xl mx-auto px-6 mb-24 md:mb-40">
+            <div class="relative w-full h-[300px] md:h-[600px] rounded-2xl overflow-hidden shadow-2xl bg-brand-dark ring-1 ring-white/5">
+                <!-- Video Overlay for better text integration if needed, and premium feel -->
+                <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent z-10 opacity-60 pointer-events-none"></div>
+                <video 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline 
+                    class="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none transition-transform duration-1000 hover:scale-105"
+                >
+                    <source src="https://vwtppdwlxrcpautdivny.supabase.co/storage/v1/object/sign/homepage/0704.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV82NWJjNzA3Ni0wZTNjLTRlYjgtOTMxNy1iNGJjYzUyZWYwY2EiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJob21lcGFnZS8wNzA0Lm1wNCIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3ODMxNDcyNjIsImV4cCI6MjA5ODUwNzI2Mn0.pGyQj-EOWcJDmLWluTTrDAAArr5T2YNQ-az3lrfoW6A" type="video/mp4">
+                    브라우저가 동영상을 지원하지 않습니다.
+                </video>
+            </div>
+        </section>
+
+        <!-- About & Markets Section -->
+        <section id="about" class="max-w-6xl mx-auto px-6 mb-24 md:mb-40 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+            <!-- About Card -->
+            <div class="bg-brand-card p-10 md:p-14 rounded-2xl border border-brand-border shadow-lg">
+                <h2 class="text-xs font-bold tracking-[0.2em] text-brand-gold uppercase mb-8 border-b border-gray-800 pb-4">About HYM Corp.</h2>
+                <p class="text-gray-300 text-base md:text-lg leading-relaxed font-light mb-8">
+                    We provide end-to-end global distribution consulting and execution for healthcare and tech-driven products.
+                </p>
+                <ul class="text-sm md:text-base text-gray-400 font-light space-y-3">
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-brand-gold rounded-full mr-3"></span>Pharmaceuticals</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-brand-gold rounded-full mr-3"></span>Medical Devices</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-brand-gold rounded-full mr-3"></span>Cosmetics</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-brand-gold rounded-full mr-3"></span>Aesthetics</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-brand-gold rounded-full mr-3"></span>Health Supplements</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-brand-gold rounded-full mr-3"></span>General Foods</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-brand-gold rounded-full mr-3"></span>Daily Necessities</li>
+                </ul>
+            </div>
+            
+            <!-- Markets Card -->
+            <div id="markets" class="bg-brand-card p-10 md:p-14 rounded-2xl border border-brand-border shadow-lg flex flex-col justify-between">
+                <div>
+                    <h2 class="text-xs font-bold tracking-[0.2em] text-brand-gold uppercase mb-8 border-b border-gray-800 pb-4">Our Core Markets</h2>
+                    <p class="text-gray-300 text-base md:text-lg leading-relaxed font-light mb-8">
+                        Strategic market expansion connecting East Asia, Central Asia, and beyond. We build bridges across borders.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2.5">
+                    <span class="px-4 py-1.5 bg-[#151515] border border-gray-800 text-gray-300 text-[13px] tracking-wide rounded-full hover:border-brand-gold transition-colors cursor-default">South Korea</span>
+                    <span class="px-4 py-1.5 bg-[#151515] border border-gray-800 text-gray-300 text-[13px] tracking-wide rounded-full hover:border-brand-gold transition-colors cursor-default">Japan</span>
+                    <span class="px-4 py-1.5 bg-[#151515] border border-gray-800 text-gray-300 text-[13px] tracking-wide rounded-full hover:border-brand-gold transition-colors cursor-default">China</span>
+                    <span class="px-4 py-1.5 bg-[#151515] border border-gray-800 text-gray-300 text-[13px] tracking-wide rounded-full hover:border-brand-gold transition-colors cursor-default">Mongolia</span>
+                    <span class="px-4 py-1.5 bg-[#151515] border border-gray-800 text-gray-300 text-[13px] tracking-wide rounded-full hover:border-brand-gold transition-colors cursor-default">Kazakhstan</span>
+                    <span class="px-4 py-1.5 bg-[#151515] border border-gray-800 text-gray-300 text-[13px] tracking-wide rounded-full hover:border-brand-gold transition-colors cursor-default">Uzbekistan</span>
+                    <span class="px-4 py-1.5 bg-[#151515] border border-gray-800 text-gray-300 text-[13px] tracking-wide rounded-full hover:border-brand-gold transition-colors cursor-default">Vietnam</span>
+                    <span class="px-4 py-1.5 bg-[#151515] border border-gray-800 text-gray-300 text-[13px] tracking-wide rounded-full hover:border-brand-gold transition-colors cursor-default">Thailand</span>
+                    <span class="px-4 py-1.5 bg-[#151515] border border-gray-800 text-gray-300 text-[13px] tracking-wide rounded-full hover:border-brand-gold transition-colors cursor-default">The Philippines</span>
+                    <span class="px-4 py-1.5 bg-[#151515] border border-gray-800 text-gray-300 text-[13px] tracking-wide rounded-full hover:border-brand-gold transition-colors cursor-default">Malaysia</span>
+                    <span class="px-4 py-1.5 bg-[#151515] border border-gray-800 text-gray-300 text-[13px] tracking-wide rounded-full hover:border-brand-gold transition-colors cursor-default">Indonesia</span>
+                    <span class="px-4 py-1.5 bg-[#151515] border border-gray-800 text-gray-300 text-[13px] tracking-wide rounded-full hover:border-brand-gold transition-colors cursor-default">Russia</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="max-w-6xl mx-auto px-6 mb-32 md:mb-40">
+            <div class="flex flex-col items-center md:items-start mb-12">
+                <h2 class="text-xs font-bold tracking-[0.2em] text-brand-gold uppercase mb-4">Our Services</h2>
+                <div class="h-px w-full md:w-24 bg-gray-800"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                
+                <!-- Service 1 -->
+                <div class="group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300">
+                    <svg class="w-8 h-8 mb-6 text-gray-500 group-hover:text-brand-gold transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"></path></svg>
+                    <h3 class="text-base font-semibold mb-3 text-white">Market Intelligence</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed font-light">In-depth analysis and localized reporting for clear market entry.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300">
+                    <svg class="w-8 h-8 mb-6 text-gray-500 group-hover:text-brand-gold transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"></path></svg>
+                    <h3 class="text-base font-semibold mb-3 text-white">Distributor Matching</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed font-light">Connecting you with verified, reliable local distribution partners.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300">
+                    <svg class="w-8 h-8 mb-6 text-gray-500 group-hover:text-brand-gold transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.84 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"></path></svg>
+                    <h3 class="text-base font-semibold mb-3 text-white">Negotiation & Interp.</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed font-light">Bridging language barriers and representing your core interests.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300">
+                    <svg class="w-8 h-8 mb-6 text-gray-500 group-hover:text-brand-gold transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12"></path></svg>
+                    <h3 class="text-base font-semibold mb-3 text-white">Regulatory Affairs</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed font-light">Managing local product registration and strict compliance.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300">
+                    <svg class="w-8 h-8 mb-6 text-gray-500 group-hover:text-brand-gold transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"></path></svg>
+                    <h3 class="text-base font-semibold mb-3 text-white">Direct & Proxy Sales</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed font-light">Executing direct wholesale and commission-based distribution.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300">
+                    <svg class="w-8 h-8 mb-6 text-gray-500 group-hover:text-brand-gold transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5"></path></svg>
+                    <h3 class="text-base font-semibold mb-3 text-white">Exhibition Proxy</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed font-light">Acting as your official proxy at international trade shows.</p>
+                </div>
+                
+                <!-- Service 7 -->
+                <div class="group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300">
+                    <svg class="w-8 h-8 mb-6 text-gray-500 group-hover:text-brand-gold transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"></path></svg>
+                    <h3 class="text-base font-semibold mb-3 text-white">Global E-commerce</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed font-light">Building and managing localized international online stores.</p>
+                </div>
+                
+                <!-- Service 8 -->
+                <div class="group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300">
+                    <svg class="w-8 h-8 mb-6 text-gray-500 group-hover:text-brand-gold transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125"></path></svg>
+                    <h3 class="text-base font-semibold mb-3 text-white">Contract Drafting</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed font-light">Providing standardized templates and facilitating agreements.</p>
+                </div>
+                
+                <!-- Service 9: SaaS -->
+                <div class="group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300">
+                    <svg class="w-8 h-8 mb-6 text-gray-500 group-hover:text-brand-gold transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z"></path></svg>
+                    <h3 class="text-base font-semibold mb-3 text-white">Export SaaS Solution</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed font-light">Providing cloud-based systems for global export management.</p>
+                </div>
+                
+                <!-- Service 10: Web Dev -->
+                <div class="group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300">
+                    <svg class="w-8 h-8 mb-6 text-gray-500 group-hover:text-brand-gold transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"></path></svg>
+                    <h3 class="text-base font-semibold mb-3 text-white">Web Development</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed font-light">Creating optimized global websites for international expansion.</p>
+                </div>
+
+                <!-- Service 11: IP & Trademark -->
+                <div class="group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300">
+                    <svg class="w-8 h-8 mb-6 text-gray-500 group-hover:text-brand-gold transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"></path></svg>
+                    <h3 class="text-base font-semibold mb-3 text-white">IP & Trademark Filing</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed font-light">Assisting with overseas registrations to protect your brand.</p>
+                </div>
+                
+                <!-- Service 12: Legal & Accounting -->
+                <div class="group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300">
+                    <svg class="w-8 h-8 mb-6 text-gray-500 group-hover:text-brand-gold transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.514.16-6.675.47m-1.928 2.36A48.17 48.17 0 0112 6.75c2.291 0 4.514.16 6.675.47m-1.928 2.36A48.17 48.17 0 0112 9c2.291 0 4.514.16 6.675.47m-1.928 2.36A48.17 48.17 0 0112 11.25c2.291 0 4.514.16 6.675.47m-1.928 2.36A48.17 48.17 0 0112 13.5c2.291 0 4.514.16 6.675.47m-1.928 2.36A48.17 48.17 0 0112 15.75c2.291 0 4.514.16 6.675.47M9 18.75v-1.5m6 1.5v-1.5"></path></svg>
+                    <h3 class="text-base font-semibold mb-3 text-white">Legal & Acct. Proxy</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed font-light">Providing reliable local legal and accounting services.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="w-full border-t border-brand-border bg-[#030303] py-16 mt-auto">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-8 md:mb-0 text-center md:text-left">
+                <h2 class="text-xs font-bold tracking-[0.2em] text-brand-gold uppercase mb-4">Contact Us</h2>
+                <a href="mailto:CEO@hyminternational.com" class="text-lg md:text-xl text-white hover:text-brand-gold transition-colors duration-300 font-light">
+                    CEO@hyminternational.com
+                </a>
+            </div>
+            <div class="flex flex-col items-center md:items-end">
+                <img src="https://vwtppdwlxrcpautdivny.supabase.co/storage/v1/object/sign/homepage/noBgWhite.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV82NWJjNzA3Ni0wZTNjLTRlYjgtOTMxNy1iNGJjYzUyZWYwY2EiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJob21lcGFnZS9ub0JnV2hpdGUucG5nIiwic2NvcGUiOiJkb3dubG9hZCIsImlhdCI6MTc4MzE0NTcxNywiZXhwIjoyMDk4NTA1NzE3fQ.RGpysI1gtskEOmEIRFNcqiGOBBYIc8gFoNEPWbKwM_o" alt="HYM CORP." class="h-8 mb-3 opacity-50 object-contain">
+                <div class="text-gray-600 text-sm tracking-wide">
+                    &copy; 2026 HYM CORP. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- 기본 메타 태그 최적화 (검색엔진이 사이트 목적을 명확히 이해하도록 보완) -->
+    <meta name="description" content="HYM CORP. - Reconnecting the ancient Silk Road. End-to-end global distribution consulting, healthcare ODM, and strategic market expansion.">
+    <meta name="keywords" content="Global Distribution, Distribution Consulting, Healthcare ODM, Market Expansion, HYM CORP">
+    <meta name="author" content="HYM CORP.">
+    
     <!-- Open Graph / 링크 공유 썸네일 설정 -->
     <meta property="og:title" content="HYM CORP. | Global Distribution & Consulting">
     <meta property="og:description" content="Reconnecting the ancient Silk Road. End-to-end global distribution consulting and execution.">
     <meta property="og:image" content="https://vwtppdwlxrcpautdivny.supabase.co/storage/v1/object/sign/homepage/235453361.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV82NWJjNzA3Ni0wZTNjLTRlYjgtOTMxNy1iNGJjYzUyZWYwY2EiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJob21lcGFnZS8yMzU0NTMzNjEucG5nIiwic2NvcGUiOiJkb3dubG9hZCIsImlhdCI6MTc4MzI1NzI2MiwiZXhwIjoyMDk4NjE3MjYyfQ.your-placeholder-token-here">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hyminternational.com/">
     
     <!-- Twitter 썸네일 설정 -->
     <meta name="twitter:card" content="summary_large_image">
@@ -20,6 +26,44 @@
     <link class="rounded-full" rel="icon" type="image/png" href="https://vwtppdwlxrcpautdivny.supabase.co/storage/v1/object/sign/homepage/symbol.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV82NWJjNzA3Ni0wZTNjLTRlYjgtOTMxNy1iNGJjYzUyZWYwY2EiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJob21lcGFnZS9zeW1ib2wucG5nIiwic2NvcGUiOiJkb3dubG9hZCIsImlhdCI6MTc4MzIzMzA4MiwiZXhwIjoyMDk4NTkzMDgyfQ.itimuCM7fYz5WGTuUn4exa8azkMv0JN-naDF7qJVGLY">
 
     <title>HYM CORP. | Global Distribution & Consulting</title>
+
+    <!-- 구조화 데이터(JSON-LD): 구글 검색 로봇에게 사이트 구조와 네비게이션 정보를 명확히 전달하여 사이트링크 생성 확률을 높임 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://hyminternational.com/#website",
+          "url": "https://hyminternational.com/",
+          "name": "HYM CORP.",
+          "description": "Global Distribution & Consulting"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://hyminternational.com/#organization",
+          "name": "HYM Co., Ltd.",
+          "url": "https://hyminternational.com/",
+          "logo": "https://vwtppdwlxrcpautdivny.supabase.co/storage/v1/object/sign/homepage/symbol.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "CEO@hyminternational.com",
+            "contactType": "customer service"
+          }
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": ["About HYM Corp", "Core Markets", "Our Services", "Contact Us"],
+          "url": [
+            "https://hyminternational.com/#about",
+            "https://hyminternational.com/#markets",
+            "https://hyminternational.com/#services",
+            "https://hyminternational.com/#contact"
+          ]
+        }
+      ]
+    }
+    </script>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -89,18 +133,17 @@
 <body class="min-h-screen flex flex-col">
 
     <!-- Header Section -->
+    <!-- SEO 최적화: <nav> 태그에 aria-label을 추가하고 앵커 링크에 title 속성을 추가하여 검색엔진의 이해도를 높임 -->
     <header class="w-full border-b border-brand-border sticky top-0 bg-[#050505]/90 backdrop-blur-md z-50 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
             
-            <!-- Logo Area (Symbol + Styled Text) -->
+            <!-- Logo Area -->
             <div class="flex items-center w-full md:w-auto justify-center md:justify-start">
-                <a href="#home" class="flex items-center gap-3 transition-all duration-300 hover:opacity-90 group">
-                    <!-- Brand Symbol with optimal scale and custom contrast filter -->
+                <a href="#home" title="HYM CORP. Home" class="flex items-center gap-3 transition-all duration-300 hover:opacity-90 group">
                     <img src="https://vwtppdwlxrcpautdivny.supabase.co/storage/v1/object/sign/homepage/symbol.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV82NWJjNzA3Ni0wZTNjLTRlYjgtOTMxNy1iNGJjYzUyZWYwY2EiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJob21lcGFnZS9zeW1ib2wucG5nIiwic2NvcGUiOiJkb3dubG9hZCIsImlhdCI6MTc4MzIzMzA4MiwiZXhwIjoyMDk4NTkzMDgyfQ.itimuCM7fYz5WGTuUn4exa8azkMv0JN-naDF7qJVGLY" 
-                         alt="HYM CORP. Symbol" 
+                         alt="HYM CORP. Global Distribution Symbol" 
                          class="h-8 md:h-10 w-auto object-contain brightness-100 contrast-125 transition-transform duration-300 group-hover:scale-105">
                     
-                    <!-- Divider Line and Text Logo for premium design -->
                     <div class="flex flex-col justify-center border-l border-brand-divider pl-3 h-9 md:h-11">
                         <span class="text-white text-base md:text-lg tracking-[0.25em] font-semibold leading-none uppercase">HYM CORP.</span>
                         <span class="text-gray-500 text-[8px] md:text-[9px] tracking-[0.15em] uppercase font-light mt-1.5">Global Distribution</span>
@@ -109,13 +152,14 @@
             </div>
 
             <!-- Navigation Menu -->
-            <nav class="w-full md:w-auto overflow-x-auto hide-scrollbar pb-2 md:pb-0">
+            <!-- 향후 다중 페이지로 전환 시 href="#about" 을 href="/about" 처럼 물리적 경로로 수정해야 메인 사이트링크가 노출됨 -->
+            <nav aria-label="Main Navigation" class="w-full md:w-auto overflow-x-auto hide-scrollbar pb-2 md:pb-0">
                 <ul class="flex justify-start sm:justify-center md:justify-end space-x-6 sm:space-x-8 md:space-x-10 text-[12px] sm:text-[13px] uppercase font-medium tracking-[0.15em] text-gray-400 whitespace-nowrap px-4 sm:px-2">
-                    <li><a href="#home" class="nav-link active hover:text-white transition-colors duration-300">Home</a></li>
-                    <li><a href="#about" class="nav-link hover:text-white transition-colors duration-300">About</a></li>
-                    <li><a href="#markets" class="nav-link hover:text-white transition-colors duration-300">Markets</a></li>
-                    <li><a href="#services" class="nav-link hover:text-white transition-colors duration-300">Services</a></li>
-                    <li><a href="#contact" class="nav-link hover:text-white transition-colors duration-300">Contact</a></li>
+                    <li><a href="#home" title="Navigate to Home" class="nav-link active hover:text-white transition-colors duration-300">Home</a></li>
+                    <li><a href="#about" title="Read About HYM Corp" class="nav-link hover:text-white transition-colors duration-300">About</a></li>
+                    <li><a href="#markets" title="Explore Our Core Markets" class="nav-link hover:text-white transition-colors duration-300">Markets</a></li>
+                    <li><a href="#services" title="View Our Services" class="nav-link hover:text-white transition-colors duration-300">Services</a></li>
+                    <li><a href="#contact" title="Contact HYM Corp" class="nav-link hover:text-white transition-colors duration-300">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -125,7 +169,7 @@
     <main class="flex-grow w-full">
         
         <!-- Hero Section -->
-        <section id="home" class="max-w-6xl mx-auto px-4 sm:px-6 pt-10 pb-12 sm:pt-12 sm:pb-16 md:pt-28 md:pb-32 text-center md:text-left break-keep">
+        <section id="home" aria-label="Introduction" class="max-w-6xl mx-auto px-4 sm:px-6 pt-10 pb-12 sm:pt-12 sm:pb-16 md:pt-28 md:pb-32 text-center md:text-left break-keep">
             <h1 class="font-serif-kr text-3xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight font-medium mb-4 sm:mb-6 tracking-tight">
                 Great Ambition,<br class="hidden md:block">
                 <span class="text-brand-gold italic">Unstoppable Power.</span>
@@ -138,15 +182,15 @@
         </section>
 
         <!-- Main Banner Area (Video) -->
-        <section class="max-w-6xl mx-auto px-4 sm:px-6 mb-20 md:mb-40">
+        <section aria-label="Brand Video" class="max-w-6xl mx-auto px-4 sm:px-6 mb-20 md:mb-40">
             <div class="relative w-full h-[300px] md:h-[600px] rounded-2xl overflow-hidden shadow-2xl bg-brand-dark ring-1 ring-white/5">
-                <!-- Video Overlay for better text integration if needed, and premium feel -->
                 <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent z-10 opacity-60 pointer-events-none"></div>
                 <video 
                     autoplay 
                     loop 
                     muted 
                     playsinline 
+                    aria-hidden="true"
                     class="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none transition-transform duration-1000 hover:scale-105"
                 >
                     <source src="https://vwtppdwlxrcpautdivny.supabase.co/storage/v1/object/sign/homepage/0704.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV82NWJjNzA3Ni0wZTNjLTRlYjgtOTMxNy1iNGJjYzUyZWYwY2EiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJob21lcGFnZS8wNzA0Lm1wNCIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3ODMxNDcyNjIsImV4cCI6MjA5ODUwNzI2Mn0.pGyQj-EOWcJDmLWluTTrDAAArr5T2YNQ-az3lrfoW6A" type="video/mp4">
@@ -156,9 +200,11 @@
         </section>
 
         <!-- About & Markets Section -->
-        <section id="about" class="max-w-6xl mx-auto px-4 sm:px-6 mb-20 md:mb-40 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16">
+        <section class="max-w-6xl mx-auto px-4 sm:px-6 mb-20 md:mb-40 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16">
+            
             <!-- About Card -->
-            <div class="bg-brand-card p-6 sm:p-10 md:p-14 rounded-2xl border border-brand-border shadow-lg break-words">
+            <!-- SEO: 의미론적으로 중요한 영역이므로 명확한 ID 부여. 네비게이션 태그와 완벽하게 호환되도록 구성 -->
+            <article id="about" class="bg-brand-card p-6 sm:p-10 md:p-14 rounded-2xl border border-brand-border shadow-lg break-words">
                 <h2 class="text-xs font-bold tracking-[0.2em] text-brand-gold uppercase mb-6 sm:mb-8 border-b border-gray-800 pb-4">About HYM Corp.</h2>
                 <p class="text-gray-300 text-base md:text-lg leading-relaxed font-light mb-6 sm:mb-8">
                     We provide end-to-end global distribution consulting and execution for healthcare and tech-driven products.
@@ -172,10 +218,10 @@
                     <li class="flex items-start sm:items-center"><span class="flex-shrink-0 w-1.5 h-1.5 bg-brand-gold rounded-full mr-3 mt-1.5 sm:mt-0"></span><span>General Foods</span></li>
                     <li class="flex items-start sm:items-center"><span class="flex-shrink-0 w-1.5 h-1.5 bg-brand-gold rounded-full mr-3 mt-1.5 sm:mt-0"></span><span>Daily Necessities</span></li>
                 </ul>
-            </div>
+            </article>
             
             <!-- Markets Card -->
-            <div id="markets" class="bg-brand-card p-6 sm:p-10 md:p-14 rounded-2xl border border-brand-border shadow-lg flex flex-col justify-between break-words">
+            <article id="markets" class="bg-brand-card p-6 sm:p-10 md:p-14 rounded-2xl border border-brand-border shadow-lg flex flex-col justify-between break-words">
                 <div>
                     <h2 class="text-xs font-bold tracking-[0.2em] text-brand-gold uppercase mb-6 sm:mb-8 border-b border-gray-800 pb-4">Our Core Markets</h2>
                     <p class="text-gray-300 text-base md:text-lg leading-relaxed font-light mb-6 sm:mb-8">
@@ -183,6 +229,7 @@
                     </p>
                 </div>
                 <div class="flex flex-wrap gap-2.5">
+                    <!-- Semantic Data: span tags acts as visual items but a screen reader / search engine will read as text block -->
                     <span class="px-4 py-1.5 bg-[#151515] border border-gray-800 text-gray-300 text-[13px] tracking-wide rounded-full hover:border-brand-gold transition-colors cursor-default">South Korea</span>
                     <span class="px-4 py-1.5 bg-[#151515] border border-gray-800 text-gray-300 text-[13px] tracking-wide rounded-full hover:border-brand-gold transition-colors cursor-default">Japan</span>
                     <span class="px-4 py-1.5 bg-[#151515] border border-gray-800 text-gray-300 text-[13px] tracking-wide rounded-full hover:border-brand-gold transition-colors cursor-default">China</span>
@@ -204,7 +251,7 @@
                     <span class="px-4 py-1.5 bg-[#151515] border border-gray-800 text-gray-300 text-[13px] tracking-wide rounded-full hover:border-brand-gold transition-colors cursor-default">Egypt</span>
                     <span class="px-4 py-1.5 bg-[#151515] border border-gray-800 text-gray-300 text-[13px] tracking-wide rounded-full hover:border-brand-gold transition-colors cursor-default">Saudi Arabia</span>
                 </div>
-            </div>
+            </article>
         </section>
 
         <!-- Services Section -->
@@ -217,7 +264,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                 
                 <!-- Service 1: Market Intelligence -->
-                <a href="https://www.ceodailybrief.com/" target="_blank" rel="noopener noreferrer" class="block group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300 relative">
+                <a href="https://www.ceodailybrief.com/" title="Market Intelligence Platform" target="_blank" rel="noopener noreferrer" class="block group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300 relative">
                     <div class="absolute top-6 right-6 text-gray-600 group-hover:text-brand-gold transition-colors duration-300">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
@@ -251,7 +298,7 @@
                 </div>
                 
                 <!-- Service 5: Direct & Proxy Sales -->
-                <a href="https://www.cellceutix.co.kr/" target="_blank" rel="noopener noreferrer" class="block group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300 relative">
+                <a href="https://www.cellceutix.co.kr/" title="Direct & Proxy Sales Platform" target="_blank" rel="noopener noreferrer" class="block group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300 relative">
                     <div class="absolute top-6 right-6 text-gray-600 group-hover:text-brand-gold transition-colors duration-300">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
@@ -285,7 +332,7 @@
                 </div>
                 
                 <!-- Service 7: Global E-commerce -->
-                <a href="https://www.exov.store/" target="_blank" rel="noopener noreferrer" class="block group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300 relative">
+                <a href="https://www.exov.store/" title="Global E-commerce Store" target="_blank" rel="noopener noreferrer" class="block group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300 relative">
                     <div class="absolute top-6 right-6 text-gray-600 group-hover:text-brand-gold transition-colors duration-300">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
@@ -312,7 +359,7 @@
                 </div>
                 
                 <!-- Service 10: SaaS -->
-                <a href="https://globalb2bxp.com/" target="_blank" rel="noopener noreferrer" class="block group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300 relative">
+                <a href="https://globalb2bxp.com/" title="Export SaaS Solution" target="_blank" rel="noopener noreferrer" class="block group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300 relative">
                     <div class="absolute top-6 right-6 text-gray-600 group-hover:text-brand-gold transition-colors duration-300">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
@@ -325,7 +372,7 @@
                 </a>
                 
                 <!-- Service 11: Web Dev -->
-                <a href="https://shinwonjong.com/" target="_blank" rel="noopener noreferrer" class="block group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300 relative">
+                <a href="https://shinwonjong.com/" title="Web Development Studio" target="_blank" rel="noopener noreferrer" class="block group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300 relative">
                     <div class="absolute top-6 right-6 text-gray-600 group-hover:text-brand-gold transition-colors duration-300">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
@@ -366,7 +413,7 @@
                 </div>
 
                 <!-- Service 16: Investment & Feasibility Analysis -->
-                <a href="https://joey1891.github.io/New-Business-Feasibility-Study-Model/" target="_blank" rel="noopener noreferrer" class="block group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300 relative">
+                <a href="https://joey1891.github.io/New-Business-Feasibility-Study-Model/" title="Investment Analysis Tool" target="_blank" rel="noopener noreferrer" class="block group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300 relative">
                     <div class="absolute top-6 right-6 text-gray-600 group-hover:text-brand-gold transition-colors duration-300">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
@@ -379,7 +426,7 @@
                 </a>
 
                 <!-- Service 17: Global Group Purchasing -->
-                <a href="https://joey1891.github.io/Group-Sales/" target="_blank" rel="noopener noreferrer" class="block group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300 relative">
+                <a href="https://joey1891.github.io/Group-Sales/" title="Group Purchasing Agency" target="_blank" rel="noopener noreferrer" class="block group bg-brand-card p-8 rounded-2xl border border-brand-border hover:border-brand-gold hover:shadow-[0_0_15px_rgba(197,160,89,0.1)] transition-all duration-300 relative">
                     <div class="absolute top-6 right-6 text-gray-600 group-hover:text-brand-gold transition-colors duration-300">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
